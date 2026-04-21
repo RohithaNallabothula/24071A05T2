@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Weather Graph - VNRVJIET</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🌤️ Weather Forecast Graph (ES6 Features)</h1>
+        
+        <div class="input-group">
+            <input type="text" id="cityInput" placeholder="Enter city (e.g., Hyderabad)" value="Hyderabad">
+            <button id="fetchBtn">Fetch Weather</button>
+        </div>
+        
+        <div id="loading" class="loading hidden">⏳ Loading weather data...</div>
+        
+        <canvas id="weatherChart"></canvas>
+        
+        <div id="errorMsg" class="error hidden"></div>
+    </div>
+
+    <script src="./weather-app.js"></script>
+</body>
+</html>
